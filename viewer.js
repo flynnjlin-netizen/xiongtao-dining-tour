@@ -5,27 +5,28 @@
   const nodes = (Array.isArray(window.PHOTO_TOUR) ? window.PHOTO_TOUR : []).filter(n => n && n.id && n.name && n.image);
   const byId = new Map(nodes.map(n => [n.id, n]));
   const savingData = !!(navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || '')));
-  const state = { current: null, requested: null, currentKey: null, requestedKey: null, quality: savingData ? 'smooth' : 'hd', currentQuality: null, yaw: 0, pitch: 0, fov: 74, token: 0, width: 1, height: 1, raf: 0 };
+  const state = { current: null, requested: null, currentKey: null, requestedKey: null, quality: savingData ? 'smooth' : 'hd', currentQuality: null, enhancing: false, yaw: 0, pitch: 0, fov: 74, token: 0, width: 1, height: 1, raf: 0 };
   const textures = new Map(), inflight = new Map(), pointers = new Map();
   let gl, program, uniforms, prefetchTimer, dragPoint, pinchDistance = 0, lastTexture = null;
   let lost = false, retryTarget = null, statusVersion = 0;
   const maxTextures = 3;
 
-  function status(message, retry) {
+  function status(message, retry, nonBlocking) {
     $('statusText').textContent = message;
     $('status').hidden = !message;
     $('retry').hidden = !retry;
+    $('status').classList.toggle('is-notice', !!nonBlocking);
     return ++statusVersion;
   }
   function radians(degrees) { return degrees * Math.PI / 180; }
   function clamp(value, low, high) { return Math.max(low, Math.min(high, value)); }
-  function photoSource(node, quality) { return quality === 'hd' ? node.hdImage || node.original || node.image : node.image; }
+  function photoSource(node, quality) { return quality === 'hd' ? node.hdImage || node.original || node.image : quality === 'preview' ? node.previewImage || node.image : node.image; }
   function photoKey(node, quality) { return node.id + '|' + quality; }
   function updateQualityControl() {
     const control = $('quality'); if (!control) return;
-    control.textContent = state.quality === 'hd' ? '画质：高清' : '画质：流畅';
+    control.textContent = state.enhancing ? '高清补全中' : state.quality === 'hd' ? (state.currentQuality === 'preview' ? '画质：预览' : '画质：高清') : '画质：流畅';
     control.setAttribute('aria-pressed', String(state.quality === 'hd'));
-    control.title = state.quality === 'hd' ? '点击切换流畅画质' : '点击加载高清画质';
+    control.title = state.enhancing ? '已可环顾预览，高清在后台补全；点击切换流畅画质' : state.quality === 'hd' ? '点击切换流畅画质' : '点击加载高清画质';
   }
   function emitView() {
     if (!state.current || typeof CustomEvent === 'undefined' || !document.dispatchEvent) return;
@@ -98,7 +99,8 @@
     return entry;
   }
   function cancelObsoleteLoads(wanted) {
-    for (const [id, task] of inflight) if (id !== wanted) { task.cancel(); inflight.delete(id); }
+    const keep = new Set(Array.isArray(wanted) ? wanted : [wanted]);
+    for (const [id, task] of inflight) if (!keep.has(id)) { task.cancel(); inflight.delete(id); }
   }
   function requestPhoto(node, quality, transform) {
     const key = photoKey(node, quality);
@@ -157,13 +159,13 @@
   }
   function prefetchNeighbor(node) {
     clearTimeout(prefetchTimer);
-    if (!gl || lost || nodes.length < 2 || (navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || '')))) return;
+    if (!gl || lost || state.enhancing || nodes.length < 2 || (navigator.connection && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || '')))) return;
     prefetchTimer = setTimeout(() => {
-      if (state.current !== node || state.requested !== node || document.hidden) return;
-      // Neighbour prefetch always uses the small image, including while this view is HD.
-      const adjacent = (node.neighbors || []).map(id => byId.get(id)).find(n => n && !textures.has(photoKey(n, 'smooth')));
-      if (adjacent) getTexture(adjacent, 'smooth').catch(() => {});
-    }, 1500);
+      if (state.current !== node || state.requested !== node || state.enhancing || document.hidden) return;
+      // A slow HD transfer owns the connection. Only prefetch one small preview after it settles.
+      const adjacent = (node.neighbors || []).map(id => byId.get(id)).find(n => n && !textures.has(photoKey(n, 'preview')));
+      if (adjacent) getTexture(adjacent, 'preview').catch(() => {});
+    }, 3000);
   }
   function updateControls(node) {
     const index = nodes.indexOf(node);
@@ -172,7 +174,7 @@
     $('positions').title = node.name;
     $('positionCount').textContent = (index + 1) + ' / ' + nodes.length;
     $('previous').disabled = index <= 0; $('next').disabled = index >= nodes.length - 1;
-    const original = node.hdImage || node.original || node.image;
+    const original = node.original || node.hdImage || node.image;
     const download = $('download'); download.href = original;
     download.download = '雄韬_' + node.name + '.' + (String(original).split('.').pop().split('?')[0] || 'jpg');
     download.removeAttribute('aria-disabled');
@@ -181,34 +183,53 @@
   }
   async function setNode(id, options) {
     const node = byId.get(id); if (!node) return false;
-    const quality = options?.quality || state.quality, key = photoKey(node, quality), preserveView = state.current?.id === id;
+    const quality = options?.quality || state.quality, key = photoKey(node, quality);
     const token = ++state.token; state.requested = node; state.requestedKey = key; state.quality = quality;
+    state.enhancing = false;
     updateQualityControl();
     retryTarget = null;
-    clearTimeout(prefetchTimer); cancelObsoleteLoads(key);
-    status((quality === 'hd' ? '正在加载高清 · ' : '正在加载 · ') + node.name, false);
-    try {
-      if (!gl) {
-        const image = await requestPhoto(node, quality);
-        if (token !== state.token) return false;
-        // Preload separately; changing a visible img to a failed URL would erase the last good photo.
-        fallback.src = image.src; fallback.hidden = false; canvas.hidden = true;
-        state.current = node; state.currentKey = key; state.currentQuality = quality;
-        if (!preserveView) { state.yaw = initialYaw(node); state.pitch = 0; state.fov = 74; }
-        updateControls(node); status('', false); emitView();
-        $('help').textContent = '当前设备显示原图 · 可下载查看';
-        return true;
-      }
-      const entry = await getTexture(node, quality);
-      if (token !== state.token) return false;
-      state.current = node; state.currentKey = key; state.currentQuality = quality; lastTexture = entry.texture;
+    clearTimeout(prefetchTimer); cancelObsoleteLoads(quality === 'hd' ? [key, photoKey(node, 'preview')] : key);
+    const hasCurrentView = state.current?.id === id;
+    const cachedFinal = gl && textures.has(key);
+    const needPreview = quality === 'hd' && !hasCurrentView && !cachedFinal && photoSource(node, 'preview') !== photoSource(node, 'hd');
+    if (hasCurrentView) status('', false);
+    else status((needPreview ? '正在加载预览 · ' : '正在加载 · ') + node.name, false);
+    const load = renderQuality => gl ? getTexture(node, renderQuality) : requestPhoto(node, renderQuality);
+    function commit(entry, renderQuality) {
+      const preserveView = state.current?.id === id;
+      if (gl) lastTexture = entry.texture;
+      else { fallback.src = entry.src; fallback.hidden = false; canvas.hidden = true; }
+      state.current = node; state.currentKey = photoKey(node, renderQuality); state.currentQuality = renderQuality;
       if (!preserveView) { state.yaw = initialYaw(node); state.pitch = 0; state.fov = 74; }
-      updateControls(node); status('', false); invalidate(); prefetchNeighbor(node); return true;
+      updateControls(node); status('', false);
+      if (gl) invalidate();
+      else { emitView(); $('help').textContent = '当前设备显示原图 · 可下载查看'; }
+    }
+    try {
+      if (needPreview) {
+        try {
+          const preview = await load('preview');
+          if (token !== state.token) return false;
+          commit(preview, 'preview');
+        } catch (error) {
+          if (token !== state.token || error.message === 'cancelled') return false;
+          // A missing preview must not prevent a valid high-resolution photo from loading.
+          status('正在加载高清 · ' + node.name, false, !!state.current);
+        }
+      }
+      if (token !== state.token) return false;
+      state.enhancing = quality === 'hd'; updateQualityControl();
+      const entry = await load(quality);
+      if (token !== state.token) return false;
+      commit(entry, quality); state.enhancing = false; updateQualityControl(); prefetchNeighbor(node); return true;
     } catch (error) {
       if (token === state.token && error.message !== 'cancelled') {
+        state.enhancing = false;
         retryTarget = { id: node.id, quality }; state.requested = state.current || node; state.requestedKey = state.currentKey || key;
         if (state.current) $('positions').value = state.current.id;
-        status(error.message + (state.current ? '，已保留当前画面。' : '。'), true);
+        if (state.currentQuality === 'smooth') state.quality = 'smooth';
+        updateQualityControl();
+        status(state.current?.id === id && state.currentQuality === 'preview' ? '已显示预览，高清暂未载入，可重试或切换流畅。' : error.message + (state.current ? '，已保留当前画面。' : '。'), true, !!state.current);
       }
       return false;
     }

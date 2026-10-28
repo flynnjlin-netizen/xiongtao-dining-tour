@@ -26,7 +26,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "CP01": "进入餐厅"
     },
-    "hdImage": "images-hd/ENTRY.webp"
+    "hdImage": "images-balanced/ENTRY.webp",
+    "previewImage": "images-preview/ENTRY.webp"
   },
   {
     "id": "CP01",
@@ -60,7 +61,8 @@ window.PHOTO_TOUR = [
       "CP14": "前往入口西侧通道",
       "ENTRY": "回到餐厅门面"
     },
-    "hdImage": "images-hd/CP01.webp"
+    "hdImage": "images-balanced/CP01.webp",
+    "previewImage": "images-preview/CP01.webp"
   },
   {
     "id": "CP14",
@@ -94,7 +96,8 @@ window.PHOTO_TOUR = [
       "CP01": "前往主入口内侧",
       "CP09": "前往大厅西侧"
     },
-    "hdImage": "images-hd/CP14.webp"
+    "hdImage": "images-balanced/CP14.webp",
+    "previewImage": "images-preview/CP14.webp"
   },
   {
     "id": "CP09",
@@ -134,7 +137,8 @@ window.PHOTO_TOUR = [
       "CP15": "前往大厅与明档之间",
       "CP10": "前往大厅东侧"
     },
-    "hdImage": "images-hd/CP09.webp"
+    "hdImage": "images-balanced/CP09.webp",
+    "previewImage": "images-preview/CP09.webp"
   },
   {
     "id": "CP15",
@@ -168,7 +172,8 @@ window.PHOTO_TOUR = [
       "CP09": "前往大厅西侧",
       "CP16": "前往食材明档总览"
     },
-    "hdImage": "images-hd/CP15.webp"
+    "hdImage": "images-balanced/CP15.webp",
+    "previewImage": "images-preview/CP15.webp"
   },
   {
     "id": "CP16",
@@ -202,7 +207,8 @@ window.PHOTO_TOUR = [
       "CP15": "前往大厅与明档之间",
       "CP08": "前往曲线锅菜台北侧"
     },
-    "hdImage": "images-hd/CP16.webp"
+    "hdImage": "images-balanced/CP16.webp",
+    "previewImage": "images-preview/CP16.webp"
   },
   {
     "id": "CP08",
@@ -242,7 +248,8 @@ window.PHOTO_TOUR = [
       "CP07": "前往蔬菜与油米展示",
       "CP12": "前往明档出菜口"
     },
-    "hdImage": "images-hd/CP08.webp"
+    "hdImage": "images-balanced/CP08.webp",
+    "previewImage": "images-preview/CP08.webp"
   },
   {
     "id": "CP07",
@@ -282,7 +289,8 @@ window.PHOTO_TOUR = [
       "CP13": "前往明档西北转角",
       "R01D": "沿通道前往包房01"
     },
-    "hdImage": "images-hd/CP07.webp"
+    "hdImage": "images-balanced/CP07.webp",
+    "previewImage": "images-preview/CP07.webp"
   },
   {
     "id": "CP13",
@@ -316,7 +324,8 @@ window.PHOTO_TOUR = [
       "CP07": "前往蔬菜与油米展示",
       "CP06": "前往鲜活展示区"
     },
-    "hdImage": "images-hd/CP13.webp"
+    "hdImage": "images-balanced/CP13.webp",
+    "previewImage": "images-preview/CP13.webp"
   },
   {
     "id": "CP06",
@@ -350,7 +359,8 @@ window.PHOTO_TOUR = [
       "CP13": "前往明档西北转角",
       "CP03": "前往西侧造景通道"
     },
-    "hdImage": "images-hd/CP06.webp"
+    "hdImage": "images-balanced/CP06.webp",
+    "previewImage": "images-preview/CP06.webp"
   },
   {
     "id": "CP03",
@@ -378,7 +388,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "CP06": "前往鲜活展示区"
     },
-    "hdImage": "images-hd/CP03.webp"
+    "hdImage": "images-balanced/CP03.webp",
+    "previewImage": "images-preview/CP03.webp"
   },
   {
     "id": "CP12",
@@ -412,7 +423,8 @@ window.PHOTO_TOUR = [
       "CP08": "前往曲线锅菜台北侧",
       "R03D": "沿通道前往独立聚餐区"
     },
-    "hdImage": "images-hd/CP12.webp"
+    "hdImage": "images-balanced/CP12.webp",
+    "previewImage": "images-preview/CP12.webp"
   },
   {
     "id": "CP10",
@@ -452,7 +464,8 @@ window.PHOTO_TOUR = [
       "CP11": "前往茶室入口",
       "R10D": "沿通道前往包房10"
     },
-    "hdImage": "images-hd/CP10.webp"
+    "hdImage": "images-balanced/CP10.webp",
+    "previewImage": "images-preview/CP10.webp"
   },
   {
     "id": "R01D",
@@ -492,7 +505,8 @@ window.PHOTO_TOUR = [
       "R02D": "沿通道前往包房02",
       "R01A": "进入包房01"
     },
-    "hdImage": "images-hd/R01D.webp"
+    "hdImage": "images-balanced/R01D.webp",
+    "previewImage": "images-preview/R01D.webp"
   },
   {
     "id": "R01A",
@@ -526,7 +540,8 @@ window.PHOTO_TOUR = [
       "R01D": "回到门前",
       "R01B": "换到桌侧"
     },
-    "hdImage": "images-hd/R01A.webp"
+    "hdImage": "images-balanced/R01A.webp",
+    "previewImage": "images-preview/R01A.webp"
   },
   {
     "id": "R01B",
@@ -554,7 +569,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R01A": "换到门侧"
     },
-    "hdImage": "images-hd/R01B.webp"
+    "hdImage": "images-balanced/R01B.webp",
+    "previewImage": "images-preview/R01B.webp"
   },
   {
     "id": "R02D",
@@ -588,7 +604,8 @@ window.PHOTO_TOUR = [
       "R01D": "沿通道前往包房01",
       "R02A": "进入包房02"
     },
-    "hdImage": "images-hd/R02D.webp"
+    "hdImage": "images-balanced/R02D.webp",
+    "previewImage": "images-preview/R02D.webp"
   },
   {
     "id": "R02A",
@@ -622,7 +639,8 @@ window.PHOTO_TOUR = [
       "R02D": "回到门前",
       "R02B": "换到桌侧"
     },
-    "hdImage": "images-hd/R02A.webp"
+    "hdImage": "images-balanced/R02A.webp",
+    "previewImage": "images-preview/R02A.webp"
   },
   {
     "id": "R02B",
@@ -650,7 +668,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R02A": "换到门侧"
     },
-    "hdImage": "images-hd/R02B.webp"
+    "hdImage": "images-balanced/R02B.webp",
+    "previewImage": "images-preview/R02B.webp"
   },
   {
     "id": "R03D",
@@ -690,7 +709,8 @@ window.PHOTO_TOUR = [
       "R04D": "沿通道前往包房04",
       "R03A": "进入独立聚餐区"
     },
-    "hdImage": "images-hd/R03D.webp"
+    "hdImage": "images-balanced/R03D.webp",
+    "previewImage": "images-preview/R03D.webp"
   },
   {
     "id": "R03A",
@@ -724,7 +744,8 @@ window.PHOTO_TOUR = [
       "R03D": "回到门前",
       "R03B": "换到桌侧"
     },
-    "hdImage": "images-hd/R03A.webp"
+    "hdImage": "images-balanced/R03A.webp",
+    "previewImage": "images-preview/R03A.webp"
   },
   {
     "id": "R03B",
@@ -752,7 +773,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R03A": "换到门侧"
     },
-    "hdImage": "images-hd/R03B.webp"
+    "hdImage": "images-balanced/R03B.webp",
+    "previewImage": "images-preview/R03B.webp"
   },
   {
     "id": "R04D",
@@ -792,7 +814,8 @@ window.PHOTO_TOUR = [
       "R05D": "沿通道前往包房05",
       "R04A": "进入包房04"
     },
-    "hdImage": "images-hd/R04D.webp"
+    "hdImage": "images-balanced/R04D.webp",
+    "previewImage": "images-preview/R04D.webp"
   },
   {
     "id": "R04A",
@@ -826,7 +849,8 @@ window.PHOTO_TOUR = [
       "R04D": "回到门前",
       "R04B": "换到桌侧"
     },
-    "hdImage": "images-hd/R04A.webp"
+    "hdImage": "images-balanced/R04A.webp",
+    "previewImage": "images-preview/R04A.webp"
   },
   {
     "id": "R04B",
@@ -854,7 +878,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R04A": "换到门侧"
     },
-    "hdImage": "images-hd/R04B.webp"
+    "hdImage": "images-balanced/R04B.webp",
+    "previewImage": "images-preview/R04B.webp"
   },
   {
     "id": "R05D",
@@ -900,7 +925,8 @@ window.PHOTO_TOUR = [
       "R08D": "沿通道前往包房08",
       "R05A": "进入包房05"
     },
-    "hdImage": "images-hd/R05D.webp"
+    "hdImage": "images-balanced/R05D.webp",
+    "previewImage": "images-preview/R05D.webp"
   },
   {
     "id": "R05A",
@@ -934,7 +960,8 @@ window.PHOTO_TOUR = [
       "R05D": "回到门前",
       "R05B": "换到桌侧"
     },
-    "hdImage": "images-hd/R05A.webp"
+    "hdImage": "images-balanced/R05A.webp",
+    "previewImage": "images-preview/R05A.webp"
   },
   {
     "id": "R05B",
@@ -962,7 +989,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R05A": "换到门侧"
     },
-    "hdImage": "images-hd/R05B.webp"
+    "hdImage": "images-balanced/R05B.webp",
+    "previewImage": "images-preview/R05B.webp"
   },
   {
     "id": "R06D",
@@ -1002,7 +1030,8 @@ window.PHOTO_TOUR = [
       "R07D": "沿通道前往包房07",
       "R06A": "进入包房06"
     },
-    "hdImage": "images-hd/R06D.webp"
+    "hdImage": "images-balanced/R06D.webp",
+    "previewImage": "images-preview/R06D.webp"
   },
   {
     "id": "R06A",
@@ -1036,7 +1065,8 @@ window.PHOTO_TOUR = [
       "R06D": "回到门前",
       "R06B": "换到桌侧"
     },
-    "hdImage": "images-hd/R06A.webp"
+    "hdImage": "images-balanced/R06A.webp",
+    "previewImage": "images-preview/R06A.webp"
   },
   {
     "id": "R06B",
@@ -1064,7 +1094,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R06A": "换到门侧"
     },
-    "hdImage": "images-hd/R06B.webp"
+    "hdImage": "images-balanced/R06B.webp",
+    "previewImage": "images-preview/R06B.webp"
   },
   {
     "id": "R07D",
@@ -1098,7 +1129,8 @@ window.PHOTO_TOUR = [
       "R06D": "沿通道前往包房06",
       "R07A": "进入包房07"
     },
-    "hdImage": "images-hd/R07D.webp"
+    "hdImage": "images-balanced/R07D.webp",
+    "previewImage": "images-preview/R07D.webp"
   },
   {
     "id": "R07A",
@@ -1132,7 +1164,8 @@ window.PHOTO_TOUR = [
       "R07D": "回到门前",
       "R07B": "换到桌侧"
     },
-    "hdImage": "images-hd/R07A.webp"
+    "hdImage": "images-balanced/R07A.webp",
+    "previewImage": "images-preview/R07A.webp"
   },
   {
     "id": "R07B",
@@ -1160,7 +1193,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R07A": "换到门侧"
     },
-    "hdImage": "images-hd/R07B.webp"
+    "hdImage": "images-balanced/R07B.webp",
+    "previewImage": "images-preview/R07B.webp"
   },
   {
     "id": "R08D",
@@ -1200,7 +1234,8 @@ window.PHOTO_TOUR = [
       "R09D": "沿通道前往包房09",
       "R08A": "进入包房08"
     },
-    "hdImage": "images-hd/R08D.webp"
+    "hdImage": "images-balanced/R08D.webp",
+    "previewImage": "images-preview/R08D.webp"
   },
   {
     "id": "R08A",
@@ -1234,7 +1269,8 @@ window.PHOTO_TOUR = [
       "R08D": "回到门前",
       "R08B": "换到桌侧"
     },
-    "hdImage": "images-hd/R08A.webp"
+    "hdImage": "images-balanced/R08A.webp",
+    "previewImage": "images-preview/R08A.webp"
   },
   {
     "id": "R08B",
@@ -1262,7 +1298,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R08A": "换到门侧"
     },
-    "hdImage": "images-hd/R08B.webp"
+    "hdImage": "images-balanced/R08B.webp",
+    "previewImage": "images-preview/R08B.webp"
   },
   {
     "id": "R09D",
@@ -1296,7 +1333,8 @@ window.PHOTO_TOUR = [
       "R08D": "沿通道前往包房08",
       "R09A": "进入包房09"
     },
-    "hdImage": "images-hd/R09D.webp"
+    "hdImage": "images-balanced/R09D.webp",
+    "previewImage": "images-preview/R09D.webp"
   },
   {
     "id": "R09A",
@@ -1330,7 +1368,8 @@ window.PHOTO_TOUR = [
       "R09D": "回到门前",
       "R09B": "换到桌侧"
     },
-    "hdImage": "images-hd/R09A.webp"
+    "hdImage": "images-balanced/R09A.webp",
+    "previewImage": "images-preview/R09A.webp"
   },
   {
     "id": "R09B",
@@ -1358,7 +1397,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R09A": "换到门侧"
     },
-    "hdImage": "images-hd/R09B.webp"
+    "hdImage": "images-balanced/R09B.webp",
+    "previewImage": "images-preview/R09B.webp"
   },
   {
     "id": "R10D",
@@ -1398,7 +1438,8 @@ window.PHOTO_TOUR = [
       "R11D": "沿通道前往包房11",
       "R10A": "进入包房10"
     },
-    "hdImage": "images-hd/R10D.webp"
+    "hdImage": "images-balanced/R10D.webp",
+    "previewImage": "images-preview/R10D.webp"
   },
   {
     "id": "R10A",
@@ -1432,7 +1473,8 @@ window.PHOTO_TOUR = [
       "R10D": "回到门前",
       "R10B": "换到桌侧"
     },
-    "hdImage": "images-hd/R10A.webp"
+    "hdImage": "images-balanced/R10A.webp",
+    "previewImage": "images-preview/R10A.webp"
   },
   {
     "id": "R10B",
@@ -1460,7 +1502,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R10A": "换到门侧"
     },
-    "hdImage": "images-hd/R10B.webp"
+    "hdImage": "images-balanced/R10B.webp",
+    "previewImage": "images-preview/R10B.webp"
   },
   {
     "id": "R11D",
@@ -1494,7 +1537,8 @@ window.PHOTO_TOUR = [
       "R10D": "沿通道前往包房10",
       "R11A": "进入包房11"
     },
-    "hdImage": "images-hd/R11D.webp"
+    "hdImage": "images-balanced/R11D.webp",
+    "previewImage": "images-preview/R11D.webp"
   },
   {
     "id": "R11A",
@@ -1528,7 +1572,8 @@ window.PHOTO_TOUR = [
       "R11D": "回到门前",
       "R11B": "换到桌侧"
     },
-    "hdImage": "images-hd/R11A.webp"
+    "hdImage": "images-balanced/R11A.webp",
+    "previewImage": "images-preview/R11A.webp"
   },
   {
     "id": "R11B",
@@ -1556,7 +1601,8 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "R11A": "换到门侧"
     },
-    "hdImage": "images-hd/R11B.webp"
+    "hdImage": "images-balanced/R11B.webp",
+    "previewImage": "images-preview/R11B.webp"
   },
   {
     "id": "CP11",
@@ -1584,6 +1630,7 @@ window.PHOTO_TOUR = [
     "hotspotLabels": {
       "CP10": "前往大厅东侧"
     },
-    "hdImage": "images-hd/CP11.webp"
+    "hdImage": "images-balanced/CP11.webp",
+    "previewImage": "images-preview/CP11.webp"
   }
 ];
