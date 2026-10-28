@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#242321">
+  <title>雄韬湘菜食堂 · 效果全景</title>
+  <link rel="stylesheet" href="styles.css?v=20261028d">
+  <link rel="stylesheet" href="plan-ui.css?v=20261028d">
+</head>
+<body>
+  <main id="tour" aria-label="餐厅效果全景">
+    <canvas id="panorama" tabindex="0" aria-label="拖动环顾全景，滚轮或双指缩放"></canvas>
+    <img id="fallbackImage" alt="当前全景原图" hidden>
+    <div id="hotspots" aria-label="前往相邻位置"></div>
+  </main>
+  <header class="heading">
+    <div><h1 id="tourTitle">雄韬 · 湘菜食堂</h1><p id="positionName">正在准备全景</p></div>
+    <div class="header-actions">
+      <button id="quality" class="text-button" type="button" aria-pressed="true">画质：高清</button>
+      <button id="planToggle" class="text-button" type="button" aria-expanded="false" aria-controls="planPanel">图纸定位</button>
+      <button id="fullscreen" class="icon-button" type="button" aria-label="全屏查看" title="全屏查看"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+    </div>
+  </header>
+  <nav id="positionBar" class="position-bar" aria-label="切换全景位置" hidden>
+    <button id="previous" type="button" aria-label="上一位置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+    <label class="position-select"><span class="sr-only">切换位置</span><select id="positions" aria-label="切换位置"></select></label>
+    <span id="positionCount"></span>
+    <button id="next" class="next-button" type="button" aria-label="下一位置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+  </nav>
+  <aside class="image-tools"><a id="download" href="#" download aria-disabled="true">下载此图</a></aside>
+  <p id="help" class="help">拖动环顾 · 点击箭头换位置<br><small>设计预演 · 菜名与价格为示意</small></p>
+  <div id="status" class="status" role="status" aria-live="polite"><span id="statusText">正在读取第一张全景…</span><button id="retry" type="button" hidden>重试</button></div>
+  <section id="planPanel" class="locator" aria-label="二层图纸与当前位置" hidden>
+    <div class="locator-top"><strong>我在图纸哪里 · 二层</strong><div class="locator-actions"><button id="planAll" type="button" aria-pressed="false">全部点位</button><button id="planExpand" type="button" aria-pressed="false">放大图纸</button><button id="planClose" type="button" aria-label="收起图纸">×</button></div></div>
+    <p id="planCurrent" class="locator-current" aria-live="polite">正在定位…</p>
+    <div class="locator-map"><svg id="planMap" role="group" aria-label="原二层图纸，红点为当前位置，扇形为观看方向"></svg></div>
+    <div class="locator-bottom"><span class="locator-hint">红点：当前位置 · 扇形：朝向<br>点灰点换位置，可拖动图纸</span><div class="locator-zoom"><button id="planPlus" type="button" aria-label="放大图纸比例">＋</button><button id="planMinus" type="button" aria-label="缩小图纸比例">−</button><button id="planReset" type="button">全图</button><button id="planLocate" type="button">定位</button></div></div>
+  </section>
+  <script src="manifest.js?v=20261028d"></script>
+  <script src="plan-data.js?v=20261028d"></script>
+  <script src="plan-ui.js?v=20261028d"></script>
+  <script src="viewer.js?v=20261028d"></script>
+</body>
+</html>
