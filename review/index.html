@@ -6,13 +6,13 @@
   <meta name="theme-color" content="#242321">
   <title>雄韬湘菜食堂 · 湘菜土菜馆 · 风格校核</title>
   <script>
-    (function(){var id=new URLSearchParams(location.search).get('node')||'CP11';if(!/^(CP11|CP16|R04A|EL_WEST|WC_WASH)$/.test(id))id='CP11';var p=document.createElement('link');p.rel='preload';p.as='image';p.href='images-preview/'+id+'.webp?v=20261030style2';p.setAttribute('fetchpriority','high');document.head.appendChild(p)})();
+    (function(){var id=new URLSearchParams(location.search).get('node')||'CP16';if(!/^(CP16|CP13|R04A|CP11|EL_WEST|WC_WASH)$/.test(id))id='CP16';var p=document.createElement('link');p.rel='preload';p.as='image';p.href='images-preview/'+id+'.webp?v=20261030style4';p.setAttribute('fetchpriority','high');document.head.appendChild(p)})();
   </script>
   <link rel="stylesheet" href="../styles.css?v=20261029review1">
   <link rel="stylesheet" href="../plan-ui.css?v=20261029review1">
 </head>
 <body>
-  <main id="tour" aria-label="首批5个区域照片全景校核预览">
+  <main id="tour" aria-label="新版6个区域照片全景氛围样板">
     <canvas id="panorama" tabindex="0" aria-label="拖动环顾全景，滚轮或双指缩放"></canvas>
     <img id="fallbackImage" alt="当前全景原图" hidden>
     <div id="hotspots" aria-label="全景位置"></div>
@@ -36,12 +36,12 @@
   <div id="status" class="status" role="status" aria-live="polite"><span id="statusText">正在读取第一张全景…</span><button id="retry" type="button" hidden>重试</button></div>
   <section id="planPanel" class="locator" aria-label="二层图纸与首批校核区域位置">
     <div class="locator-mobile-bar"><div><span>我在图纸哪里 · 二层</span><strong id="planMobileName">正在定位…</strong></div><button id="planMobileToggle" type="button" aria-expanded="false" aria-controls="planMap">展开图纸 ▴</button></div>
-    <div class="locator-top"><div><strong>我在图纸哪里</strong><small>10月24日二层设计图 · 首批5区校核</small></div><div class="locator-actions"><button id="planExpand" type="button" aria-pressed="false">全屏图纸</button><button id="planClose" type="button" aria-label="返回全景" hidden>×</button></div></div>
+    <div class="locator-top"><div><strong>我在图纸哪里</strong><small>10月24日二层设计图 · 新版6区氛围样板</small></div><div class="locator-actions"><button id="planExpand" type="button" aria-pressed="false">全屏图纸</button><button id="planClose" type="button" aria-label="返回全景" hidden>×</button></div></div>
     <div class="locator-current-box"><p id="planCurrent" class="locator-current" aria-live="polite">正在定位…</p><p id="planPointId" class="locator-point"></p><p id="planMode" class="locator-mode">局部跟随 · 换位置自动定位</p></div>
     <div class="locator-map"><svg id="planMap" role="group" aria-label="原二层图纸，红点为当前位置，扇形为观看方向"></svg></div>
-    <div class="locator-bottom"><div class="locator-zoom"><button id="planPlus" type="button" aria-label="放大图纸比例">＋</button><button id="planMinus" type="button" aria-label="缩小图纸比例">−</button><button id="planReset" type="button">查看全图</button><button id="planLocate" type="button" aria-pressed="true">跟随我</button><button id="planAll" type="button" aria-pressed="false">全部点位</button></div><span class="locator-hint"><i aria-hidden="true"></i>红点是我 · 扇形是眼前方向 · 全部点位可切换区域<br>拖动查看图纸，点“跟随我”回到当前局部</span><p class="locator-note">首批5区风格样板；位置按平面校核，材料、灯具及菜价为设计示意，尺寸保留调整</p></div>
+    <div class="locator-bottom"><div class="locator-zoom"><button id="planPlus" type="button" aria-label="放大图纸比例">＋</button><button id="planMinus" type="button" aria-label="缩小图纸比例">−</button><button id="planReset" type="button">查看全图</button><button id="planLocate" type="button" aria-pressed="true">跟随我</button><button id="planAll" type="button" aria-pressed="false">全部点位</button></div><span class="locator-hint"><i aria-hidden="true"></i>红点是我 · 扇形是眼前方向 · 全部点位可切换区域<br>拖动查看图纸，点“跟随我”回到当前局部</span><p class="locator-note">6区氛围样板；土布、菜品海报、陈列及售价为设计建议，细节与尺寸继续结合图纸复核</p></div>
   </section>
-  <script src="manifest.js?v=20261030style2"></script>
+  <script src="manifest.js?v=20261030style4"></script>
   <script src="../plan-data.js?v=20261029review1"></script>
   <script>
     ['image','background','plainImage'].forEach(function(key){if(window.PHOTO_TOUR_PLAN[key])window.PHOTO_TOUR_PLAN[key]='../'+window.PHOTO_TOUR_PLAN[key]});
