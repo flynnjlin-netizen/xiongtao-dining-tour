@@ -1,40 +1,47 @@
-// Photo viewpoints derived from 2026-10-24 2F CAD. Finishes are design previews.
+// CAD-related design preview; heights and finishes are design proposals.
 window.PHOTO_TOUR = [
   {
-    "id": "ENTRY",
-    "name": "二层餐厅门面",
-    "group": "入口",
-    "image": "images/ENTRY.webp",
-    "original": "images-hd/ENTRY.webp",
+    "id": "CP16",
+    "name": "食材明档总览",
     "cad_xy": [
-      252413.791,
-      85945.5669
+      247885.1254,
+      97956.8638
     ],
     "lookAt": [
-      253108.4268,
-      88864.0393
+      250785.1254,
+      98756.8638
     ],
     "neighbors": [
-      "CP01"
+      "CP08",
+      "CP15"
     ],
     "hotspotAnchors": {
-      "CP01": [
-        252660,
-        86980
+      "CP08": [
+        245000,
+        99200
+      ],
+      "CP15": [
+        248100,
+        94050
       ]
     },
     "hotspotLabels": {
-      "CP01": "进入餐厅"
+      "CP08": "曲线锅菜台北侧",
+      "CP15": "大厅与明档之间"
     },
-    "hdImage": "images-balanced/ENTRY.webp",
-    "previewImage": "images-preview/ENTRY.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP16.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP16.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP16.webp?v=20261101v5",
+    "original": "images-v5/hd/CP16.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP01",
     "name": "主入口内侧",
-    "group": "大厅与造景",
-    "image": "images/CP01.webp",
-    "original": "images-hd/CP01.webp",
     "cad_xy": [
       252660,
       86980
@@ -45,31 +52,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "CP14",
-      "ENTRY"
+      "TV_SOUTH_VIEW",
+      "TV_CENTRAL_VIEW"
     ],
     "hotspotAnchors": {
       "CP14": [
-        251035.1254,
-        88056.8638
+        251550,
+        87450
       ],
-      "ENTRY": [
-        252413.791,
-        85945.5669
+      "TV_SOUTH_VIEW": [
+        256050.0,
+        87000.0
+      ],
+      "TV_CENTRAL_VIEW": [
+        252900.0,
+        87000.0
       ]
     },
     "hotspotLabels": {
-      "CP14": "前往入口西侧通道",
-      "ENTRY": "回到餐厅门面"
+      "CP14": "入口西侧通道",
+      "TV_SOUTH_VIEW": "南侧电视柜近看",
+      "TV_CENTRAL_VIEW": "中央电视柜近看"
     },
-    "hdImage": "images-balanced/CP01.webp",
-    "previewImage": "images-preview/CP01.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP01.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP01.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP01.webp?v=20261101v5",
+    "original": "images-v5/hd/CP01.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP14",
     "name": "入口西侧通道",
-    "group": "大厅与造景",
-    "image": "images/CP14.webp",
-    "original": "images-hd/CP14.webp",
     "cad_xy": [
       251035.1254,
       88056.8638
@@ -84,8 +101,8 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "CP01": [
-        252660,
-        86980
+        251550,
+        87450
       ],
       "CP09": [
         251000,
@@ -93,18 +110,22 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "CP01": "前往主入口内侧",
-      "CP09": "前往大厅西侧"
+      "CP01": "主入口内侧",
+      "CP09": "大厅西侧"
     },
-    "hdImage": "images-balanced/CP14.webp",
-    "previewImage": "images-preview/CP14.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP14.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP14.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP14.webp?v=20261101v5",
+    "original": "images-v5/hd/CP14.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP09",
     "name": "大厅西侧",
-    "group": "大厅与造景",
-    "image": "images/CP09.webp",
-    "original": "images-hd/CP09.webp",
     "cad_xy": [
       251000,
       93100
@@ -114,38 +135,42 @@ window.PHOTO_TOUR = [
       95922.8184
     ],
     "neighbors": [
+      "CP10",
       "CP14",
-      "CP15",
-      "CP10"
+      "CP15"
     ],
     "hotspotAnchors": {
+      "CP10": [
+        251021.3928284719,
+        87663.60651473945
+      ],
       "CP14": [
         251035.1254,
         88056.8638
       ],
       "CP15": [
-        248335.1254,
-        93456.8638
-      ],
-      "CP10": [
-        255535.1254,
-        93006.8638
+        251079.5943,
+        98828.22680635439
       ]
     },
     "hotspotLabels": {
-      "CP14": "前往入口西侧通道",
-      "CP15": "前往大厅与明档之间",
-      "CP10": "前往大厅东侧"
+      "CP10": "大厅东侧",
+      "CP14": "入口西侧通道",
+      "CP15": "大厅与明档之间"
     },
-    "hdImage": "images-balanced/CP09.webp",
-    "previewImage": "images-preview/CP09.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP09.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP09.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP09.webp?v=20261101v5",
+    "original": "images-v5/hd/CP09.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP15",
     "name": "大厅与明档之间",
-    "group": "大厅与造景",
-    "image": "images/CP15.webp",
-    "original": "images-hd/CP15.webp",
     "cad_xy": [
       248335.1254,
       93456.8638
@@ -160,62 +185,31 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "CP09": [
-        251000,
-        93100
+        248105.556813358,
+        93147.97788947057
       ],
       "CP16": [
-        247885.1254,
-        97956.8638
+        248100,
+        94050
       ]
     },
     "hotspotLabels": {
-      "CP09": "前往大厅西侧",
-      "CP16": "前往食材明档总览"
+      "CP09": "大厅西侧",
+      "CP16": "食材明档总览"
     },
-    "hdImage": "images-balanced/CP15.webp",
-    "previewImage": "images-preview/CP15.webp"
-  },
-  {
-    "id": "CP16",
-    "name": "食材明档总览",
-    "group": "明档与食材",
-    "image": "images/CP16.webp",
-    "original": "images-hd/CP16.webp",
-    "cad_xy": [
-      247885.1254,
-      97956.8638
-    ],
-    "lookAt": [
-      245129.9962,
-      99143.9876
-    ],
-    "neighbors": [
-      "CP15",
-      "CP08"
-    ],
-    "hotspotAnchors": {
-      "CP15": [
-        248335.1254,
-        93456.8638
-      ],
-      "CP08": [
-        245000,
-        99200
-      ]
-    },
-    "hotspotLabels": {
-      "CP15": "前往大厅与明档之间",
-      "CP08": "前往曲线锅菜台北侧"
-    },
-    "hdImage": "images-balanced/CP16.webp",
-    "previewImage": "images-preview/CP16.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP15.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP15.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP15.webp?v=20261101v5",
+    "original": "images-v5/hd/CP15.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP08",
     "name": "曲线锅菜台北侧",
-    "group": "明档与食材",
-    "image": "images/CP08.webp",
-    "original": "images-hd/CP08.webp",
     "cad_xy": [
       245000,
       99200
@@ -225,15 +219,11 @@ window.PHOTO_TOUR = [
       96886.9544
     ],
     "neighbors": [
-      "CP16",
       "CP07",
-      "CP12"
+      "CP12",
+      "CP16"
     ],
     "hotspotAnchors": {
-      "CP16": [
-        247885.1254,
-        97956.8638
-      ],
       "CP07": [
         238300,
         98900
@@ -241,22 +231,30 @@ window.PHOTO_TOUR = [
       "CP12": [
         254000,
         99400
+      ],
+      "CP16": [
+        247885.1254,
+        97956.8638
       ]
     },
     "hotspotLabels": {
-      "CP16": "前往食材明档总览",
-      "CP07": "前往蔬菜与油米展示",
-      "CP12": "前往明档出菜口"
+      "CP07": "蔬菜与油米展示",
+      "CP12": "明档出菜口",
+      "CP16": "食材明档总览"
     },
-    "hdImage": "images-balanced/CP08.webp",
-    "previewImage": "images-preview/CP08.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP08.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP08.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP08.webp?v=20261101v5",
+    "original": "images-v5/hd/CP08.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP07",
     "name": "蔬菜与油米展示",
-    "group": "明档与食材",
-    "image": "images/CP07.webp",
-    "original": "images-hd/CP07.webp",
     "cad_xy": [
       238300,
       98900
@@ -285,19 +283,23 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "CP08": "前往曲线锅菜台北侧",
-      "CP13": "前往明档西北转角",
-      "R01D": "沿通道前往包房01"
+      "CP08": "曲线锅菜台北侧",
+      "CP13": "土货售卖与食材展示",
+      "R01D": "包间01 · 门前走道"
     },
-    "hdImage": "images-balanced/CP07.webp",
-    "previewImage": "images-preview/CP07.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP07.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP07.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP07.webp?v=20261101v5",
+    "original": "images-v5/hd/CP07.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP13",
-    "name": "明档西北转角",
-    "group": "明档与食材",
-    "image": "images/CP13.webp",
-    "original": "images-hd/CP13.webp",
+    "name": "土货售卖与食材展示",
     "cad_xy": [
       234100,
       98900
@@ -307,32 +309,36 @@ window.PHOTO_TOUR = [
       96479.2093
     ],
     "neighbors": [
-      "CP07",
-      "CP06"
+      "CP06",
+      "CP07"
     ],
     "hotspotAnchors": {
-      "CP07": [
-        238300,
-        98900
-      ],
       "CP06": [
         234100,
         95700
+      ],
+      "CP07": [
+        238300,
+        98900
       ]
     },
     "hotspotLabels": {
-      "CP07": "前往蔬菜与油米展示",
-      "CP06": "前往鲜活展示区"
+      "CP06": "鲜活展示区",
+      "CP07": "蔬菜与油米展示"
     },
-    "hdImage": "images-balanced/CP13.webp",
-    "previewImage": "images-preview/CP13.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP13.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP13.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP13.webp?v=20261101v5",
+    "original": "images-v5/hd/CP13.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP06",
     "name": "鲜活展示区",
-    "group": "明档与食材",
-    "image": "images/CP06.webp",
-    "original": "images-hd/CP06.webp",
     "cad_xy": [
       234100,
       95700
@@ -342,32 +348,36 @@ window.PHOTO_TOUR = [
       95516.6367
     ],
     "neighbors": [
-      "CP13",
-      "CP03"
+      "CP03",
+      "CP13"
     ],
     "hotspotAnchors": {
-      "CP13": [
-        234100,
-        98900
-      ],
       "CP03": [
         235100,
         89100
+      ],
+      "CP13": [
+        234100,
+        98900
       ]
     },
     "hotspotLabels": {
-      "CP13": "前往明档西北转角",
-      "CP03": "前往西侧造景通道"
+      "CP03": "造景通道 · 室内一侧",
+      "CP13": "土货售卖与食材展示"
     },
-    "hdImage": "images-balanced/CP06.webp",
-    "previewImage": "images-preview/CP06.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP06.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP06.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP06.webp?v=20261101v5",
+    "original": "images-v5/hd/CP06.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP03",
-    "name": "西侧造景通道",
-    "group": "大厅与造景",
-    "image": "images/CP03.webp",
-    "original": "images-hd/CP03.webp",
+    "name": "造景通道 · 室内一侧",
     "cad_xy": [
       235100,
       89100
@@ -386,17 +396,21 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "CP06": "前往鲜活展示区"
+      "CP06": "鲜活展示区"
     },
-    "hdImage": "images-balanced/CP03.webp",
-    "previewImage": "images-preview/CP03.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP03.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP03.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP03.webp?v=20261101v5",
+    "original": "images-v5/hd/CP03.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP12",
     "name": "明档出菜口",
-    "group": "明档与食材",
-    "image": "images/CP12.webp",
-    "original": "images-hd/CP12.webp",
     "cad_xy": [
       254000,
       99400
@@ -420,18 +434,22 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "CP08": "前往曲线锅菜台北侧",
-      "R03D": "沿通道前往独立聚餐区"
+      "CP08": "曲线锅菜台北侧",
+      "R03D": "四桌独立就餐区 · 门前走道"
     },
-    "hdImage": "images-balanced/CP12.webp",
-    "previewImage": "images-preview/CP12.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP12.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP12.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP12.webp?v=20261101v5",
+    "original": "images-v5/hd/CP12.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "CP10",
     "name": "大厅东侧",
-    "group": "大厅与造景",
-    "image": "images/CP10.webp",
-    "original": "images-hd/CP10.webp",
     "cad_xy": [
       259600,
       95000
@@ -443,36 +461,214 @@ window.PHOTO_TOUR = [
     "neighbors": [
       "CP09",
       "CP11",
-      "R10D"
+      "R10D",
+      "TV_SOUTH_VIEW",
+      "TV_CENTRAL_VIEW"
     ],
     "hotspotAnchors": {
       "CP09": [
-        257335.1254,
-        94356.8638
+        257250,
+        94350
       ],
       "CP11": [
-        260035.1254,
-        91656.8638
+        259800,
+        92250
       ],
       "R10D": [
         267776.9457,
         93136.1573
+      ],
+      "TV_SOUTH_VIEW": [
+        259805.8463,
+        86236.9594
+      ],
+      "TV_CENTRAL_VIEW": [
+        256950.0,
+        94200.0
       ]
     },
     "hotspotLabels": {
-      "CP09": "前往大厅西侧",
-      "CP11": "前往茶室入口",
-      "R10D": "沿通道前往包房10"
+      "CP09": "大厅西侧",
+      "CP11": "茶室 · 入口看茶桌",
+      "R10D": "包间10 · 门前走道",
+      "TV_SOUTH_VIEW": "南侧电视柜近看",
+      "TV_CENTRAL_VIEW": "中央电视柜近看"
     },
-    "hdImage": "images-balanced/CP10.webp",
-    "previewImage": "images-preview/CP10.webp"
+    "group": "大厅、明档与土货展示",
+    "image": "images-v5/standard/CP10.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP10.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP10.webp?v=20261101v5",
+    "original": "images-v5/hd/CP10.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "TV_CENTRAL_VIEW",
+    "name": "中央电视柜近看",
+    "cad_xy": [
+      253485.1254,
+      90406.8638
+    ],
+    "lookAt": [
+      255235.1254,
+      90956.8638
+    ],
+    "neighbors": [
+      "CP01",
+      "CP10"
+    ],
+    "hotspotAnchors": {
+      "CP01": [
+        254100.0,
+        88800.0
+      ],
+      "CP10": [
+        254550.0,
+        91800.0
+      ]
+    },
+    "hotspotLabels": {
+      "CP01": "主入口内侧",
+      "CP10": "大厅东侧"
+    },
+    "group": "电视与陈列柜近看",
+    "image": "images-v5/standard/TV_CENTRAL_VIEW.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/TV_CENTRAL_VIEW.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/TV_CENTRAL_VIEW.webp?v=20261101v5",
+    "original": "images-v5/hd/TV_CENTRAL_VIEW.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "TV_SOUTH_VIEW",
+    "name": "南侧电视柜近看",
+    "cad_xy": [
+      259805.8463,
+      86236.9594
+    ],
+    "lookAt": [
+      260255.8463,
+      84436.9594
+    ],
+    "neighbors": [
+      "CP10",
+      "CP01",
+      "CP11"
+    ],
+    "hotspotAnchors": {
+      "CP10": [
+        259600.0,
+        95000.0
+      ],
+      "CP01": [
+        258900.0,
+        87450.0
+      ],
+      "CP11": [
+        259800.0,
+        86850.0
+      ]
+    },
+    "hotspotLabels": {
+      "CP10": "大厅东侧",
+      "CP01": "主入口内侧",
+      "CP11": "茶室 · 入口看茶桌"
+    },
+    "group": "电视与陈列柜近看",
+    "image": "images-v5/standard/TV_SOUTH_VIEW.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/TV_SOUTH_VIEW.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/TV_SOUTH_VIEW.webp?v=20261101v5",
+    "original": "images-v5/hd/TV_SOUTH_VIEW.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "CP11",
+    "name": "茶室 · 入口看茶桌",
+    "cad_xy": [
+      264600,
+      82700
+    ],
+    "lookAt": [
+      265950,
+      83300
+    ],
+    "neighbors": [
+      "CP10",
+      "TEA_B",
+      "TV_SOUTH_VIEW"
+    ],
+    "hotspotAnchors": {
+      "CP10": [
+        264450,
+        82950
+      ],
+      "TEA_B": [
+        265100,
+        82200
+      ],
+      "TV_SOUTH_VIEW": [
+        263945.1254,
+        83589.1191
+      ]
+    },
+    "hotspotLabels": {
+      "CP10": "大厅东侧",
+      "TEA_B": "茶室 · 南侧反向细节",
+      "TV_SOUTH_VIEW": "南侧电视柜近看"
+    },
+    "group": "茶室",
+    "image": "images-v5/standard/CP11.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/CP11.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/CP11.webp?v=20261101v5",
+    "original": "images-v5/hd/CP11.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "TEA_B",
+    "name": "茶室 · 南侧反向细节",
+    "cad_xy": [
+      265100,
+      82200
+    ],
+    "lookAt": [
+      265900,
+      83700
+    ],
+    "neighbors": [
+      "CP11"
+    ],
+    "hotspotAnchors": {
+      "CP11": [
+        264600,
+        82700
+      ]
+    },
+    "hotspotLabels": {
+      "CP11": "茶室 · 入口看茶桌"
+    },
+    "group": "茶室",
+    "image": "images-v5/standard/TEA_B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/TEA_B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/TEA_B.webp?v=20261101v5",
+    "original": "images-v5/hd/TEA_B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R01D",
-    "name": "包房01门前",
-    "group": "包房走廊",
-    "image": "images/R01D.webp",
-    "original": "images-hd/R01D.webp",
+    "name": "包间01 · 门前走道",
     "cad_xy": [
       230544.7218,
       99731.8638
@@ -483,37 +679,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "CP07",
-      "R02D",
-      "R01A"
+      "R01A",
+      "R02D"
     ],
     "hotspotAnchors": {
       "CP07": [
         230785.1254,
         99306.8638
       ],
-      "R02D": [
-        233485.1254,
-        99306.8638
-      ],
       "R01A": [
         230785.1254,
         101106.8638
+      ],
+      "R02D": [
+        231150,
+        99600
       ]
     },
     "hotspotLabels": {
-      "CP07": "前往蔬菜与油米展示",
-      "R02D": "沿通道前往包房02",
-      "R01A": "进入包房01"
+      "CP07": "蔬菜与油米展示",
+      "R01A": "包间01 · 室内全景",
+      "R02D": "包间02 · 门前走道"
     },
-    "hdImage": "images-balanced/R01D.webp",
-    "previewImage": "images-preview/R01D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R01D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R01D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R01D.webp?v=20261101v5",
+    "original": "images-v5/hd/R01D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R01A",
-    "name": "包房01 · 靠门看全屋",
-    "group": "包房01",
-    "image": "images/R01A.webp",
-    "original": "images-hd/R01A.webp",
+    "name": "包间01 · 室内全景",
     "cad_xy": [
       231885.1254,
       102906.8638
@@ -523,32 +723,36 @@ window.PHOTO_TOUR = [
       105894.5045
     ],
     "neighbors": [
-      "R01D",
-      "R01B"
+      "R01B",
+      "R01D"
     ],
     "hotspotAnchors": {
+      "R01B": [
+        230400,
+        105450
+      ],
       "R01D": [
         230785.1254,
         101106.8638
-      ],
-      "R01B": [
-        230335.1254,
-        106056.8638
       ]
     },
     "hotspotLabels": {
-      "R01D": "回到门前",
-      "R01B": "换到桌侧"
+      "R01B": "包间01 · 反向细节",
+      "R01D": "包间01 · 门前走道"
     },
-    "hdImage": "images-balanced/R01A.webp",
-    "previewImage": "images-preview/R01A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R01A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R01A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R01A.webp?v=20261101v5",
+    "original": "images-v5/hd/R01A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R01B",
-    "name": "包房01 · 桌侧细节",
-    "group": "包房01",
-    "image": "images/R01B.webp",
-    "original": "images-hd/R01B.webp",
+    "name": "包间01 · 反向细节",
     "cad_xy": [
       230685.1254,
       109506.8638
@@ -562,22 +766,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R01A": [
-        230335.1254,
-        106056.8638
+        230250,
+        106350
       ]
     },
     "hotspotLabels": {
-      "R01A": "换到门侧"
+      "R01A": "包间01 · 室内全景"
     },
-    "hdImage": "images-balanced/R01B.webp",
-    "previewImage": "images-preview/R01B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R01B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R01B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R01B.webp?v=20261101v5",
+    "original": "images-v5/hd/R01B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R02D",
-    "name": "包房02门前",
-    "group": "包房走廊",
-    "image": "images/R02D.webp",
-    "original": "images-hd/R02D.webp",
+    "name": "包间02 · 门前走道",
     "cad_xy": [
       239756.8717,
       99731.8638
@@ -592,8 +800,8 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R01D": [
-        239335.1254,
-        99306.8638
+        239550,
+        99600
       ],
       "R02A": [
         239335.1254,
@@ -601,18 +809,22 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R01D": "沿通道前往包房01",
-      "R02A": "进入包房02"
+      "R01D": "包间01 · 门前走道",
+      "R02A": "包间02 · 室内全景"
     },
-    "hdImage": "images-balanced/R02D.webp",
-    "previewImage": "images-preview/R02D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R02D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R02D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R02D.webp?v=20261101v5",
+    "original": "images-v5/hd/R02D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R02A",
-    "name": "包房02 · 靠门看全屋",
-    "group": "包房02",
-    "image": "images/R02A.webp",
-    "original": "images-hd/R02A.webp",
+    "name": "包间02 · 室内全景",
     "cad_xy": [
       238635.1254,
       102961.8638
@@ -622,32 +834,36 @@ window.PHOTO_TOUR = [
       105817.6376
     ],
     "neighbors": [
-      "R02D",
-      "R02B"
+      "R02B",
+      "R02D"
     ],
     "hotspotAnchors": {
-      "R02D": [
-        239335.1254,
-        102006.8638
-      ],
       "R02B": [
-        235735.1254,
-        105606.8638
+        236100,
+        105000
+      ],
+      "R02D": [
+        239100,
+        102300
       ]
     },
     "hotspotLabels": {
-      "R02D": "回到门前",
-      "R02B": "换到桌侧"
+      "R02B": "包间02 · 反向细节",
+      "R02D": "包间02 · 门前走道"
     },
-    "hdImage": "images-balanced/R02A.webp",
-    "previewImage": "images-preview/R02A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R02A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R02A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R02A.webp?v=20261101v5",
+    "original": "images-v5/hd/R02A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R02B",
-    "name": "包房02 · 桌侧细节",
-    "group": "包房02",
-    "image": "images/R02B.webp",
-    "original": "images-hd/R02B.webp",
+    "name": "包间02 · 反向细节",
     "cad_xy": [
       236235.1254,
       109561.8638
@@ -661,22 +877,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R02A": [
-        235735.1254,
-        105606.8638
+        235650,
+        106500
       ]
     },
     "hotspotLabels": {
-      "R02A": "换到门侧"
+      "R02A": "包间02 · 室内全景"
     },
-    "hdImage": "images-balanced/R02B.webp",
-    "previewImage": "images-preview/R02B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R02B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R02B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R02B.webp?v=20261101v5",
+    "original": "images-v5/hd/R02B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R03D",
-    "name": "独立聚餐区门前",
-    "group": "包房走廊",
-    "image": "images/R03D.webp",
-    "original": "images-hd/R03D.webp",
+    "name": "四桌独立就餐区 · 门前走道",
     "cad_xy": [
       256485.1254,
       106213.2248
@@ -687,37 +907,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "CP12",
-      "R04D",
-      "R03A"
+      "R03A",
+      "R04D"
     ],
     "hotspotAnchors": {
       "CP12": [
-        256885.1254,
-        105606.8638
-      ],
-      "R04D": [
-        259335.1254,
-        106256.8531
+        261750,
+        105750
       ],
       "R03A": [
         252835.1254,
         107456.8638
+      ],
+      "R04D": [
+        259335.1254,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "CP12": "前往明档出菜口",
-      "R04D": "沿通道前往包房04",
-      "R03A": "进入独立聚餐区"
+      "CP12": "明档出菜口",
+      "R03A": "四桌独立就餐区 · 室内全景",
+      "R04D": "包间04 · 门前走道"
     },
-    "hdImage": "images-balanced/R03D.webp",
-    "previewImage": "images-preview/R03D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R03D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R03D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R03D.webp?v=20261101v5",
+    "original": "images-v5/hd/R03D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R03A",
-    "name": "独立聚餐区 · 靠门看全屋",
-    "group": "独立聚餐区",
-    "image": "images/R03A.webp",
-    "original": "images-hd/R03A.webp",
+    "name": "四桌独立就餐区 · 室内全景",
     "cad_xy": [
       252835.1254,
       107456.8638
@@ -727,32 +951,36 @@ window.PHOTO_TOUR = [
       109053.0021
     ],
     "neighbors": [
-      "R03D",
-      "R03B"
+      "R03B",
+      "R03D"
     ],
     "hotspotAnchors": {
+      "R03B": [
+        251550,
+        109200
+      ],
       "R03D": [
         256485.1254,
         106213.2248
-      ],
-      "R03B": [
-        250585.1254,
-        111006.8638
       ]
     },
     "hotspotLabels": {
-      "R03D": "回到门前",
-      "R03B": "换到桌侧"
+      "R03B": "四桌独立就餐区 · 反向细节",
+      "R03D": "四桌独立就餐区 · 门前走道"
     },
-    "hdImage": "images-balanced/R03A.webp",
-    "previewImage": "images-preview/R03A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R03A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R03A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R03A.webp?v=20261101v5",
+    "original": "images-v5/hd/R03A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R03B",
-    "name": "独立聚餐区 · 桌侧细节",
-    "group": "独立聚餐区",
-    "image": "images/R03B.webp",
-    "original": "images-hd/R03B.webp",
+    "name": "四桌独立就餐区 · 反向细节",
     "cad_xy": [
       248635.1254,
       110756.8638
@@ -766,22 +994,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R03A": [
-        250585.1254,
-        111006.8638
+        248850,
+        110850
       ]
     },
     "hotspotLabels": {
-      "R03A": "换到门侧"
+      "R03A": "四桌独立就餐区 · 室内全景"
     },
-    "hdImage": "images-balanced/R03B.webp",
-    "previewImage": "images-preview/R03B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R03B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R03B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R03B.webp?v=20261101v5",
+    "original": "images-v5/hd/R03B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R04D",
-    "name": "包房04门前",
-    "group": "包房走廊",
-    "image": "images/R04D.webp",
-    "original": "images-hd/R04D.webp",
+    "name": "包间04 · 门前走道",
     "cad_xy": [
       259335.1254,
       106256.8531
@@ -792,37 +1024,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "R03D",
-      "R05D",
-      "R04A"
+      "R04A",
+      "R05D"
     ],
     "hotspotAnchors": {
       "R03D": [
         256485.1254,
         106213.2248
       ],
-      "R05D": [
-        260685.1254,
-        106256.8531
-      ],
       "R04A": [
         259235.1254,
         107856.8638
+      ],
+      "R05D": [
+        260685.1254,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "R03D": "沿通道前往独立聚餐区",
-      "R05D": "沿通道前往包房05",
-      "R04A": "进入包房04"
+      "R03D": "四桌独立就餐区 · 门前走道",
+      "R04A": "包间04 · 室内全景",
+      "R05D": "包间05 · 门前走道"
     },
-    "hdImage": "images-balanced/R04D.webp",
-    "previewImage": "images-preview/R04D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R04D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R04D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R04D.webp?v=20261101v5",
+    "original": "images-v5/hd/R04D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R04A",
-    "name": "包房04 · 靠门看全屋",
-    "group": "包房04",
-    "image": "images/R04A.webp",
-    "original": "images-hd/R04A.webp",
+    "name": "包间04 · 室内全景",
     "cad_xy": [
       259235.1254,
       107856.8638
@@ -832,32 +1068,36 @@ window.PHOTO_TOUR = [
       110471.6892
     ],
     "neighbors": [
-      "R04D",
-      "R04B"
+      "R04B",
+      "R04D"
     ],
     "hotspotAnchors": {
-      "R04D": [
-        259335.1254,
-        106256.8531
-      ],
       "R04B": [
         257735.1254,
         108156.8638
+      ],
+      "R04D": [
+        259335.1254,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "R04D": "回到门前",
-      "R04B": "换到桌侧"
+      "R04B": "包间04 · 反向细节",
+      "R04D": "包间04 · 门前走道"
     },
-    "hdImage": "images-balanced/R04A.webp",
-    "previewImage": "images-preview/R04A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R04A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R04A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R04A.webp?v=20261101v5",
+    "original": "images-v5/hd/R04A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R04B",
-    "name": "包房04 · 桌侧细节",
-    "group": "包房04",
-    "image": "images/R04B.webp",
-    "original": "images-hd/R04B.webp",
+    "name": "包间04 · 反向细节",
     "cad_xy": [
       257735.1254,
       108156.8638
@@ -876,17 +1116,21 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R04A": "换到门侧"
+      "R04A": "包间04 · 室内全景"
     },
-    "hdImage": "images-balanced/R04B.webp",
-    "previewImage": "images-preview/R04B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R04B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R04B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R04B.webp?v=20261101v5",
+    "original": "images-v5/hd/R04B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R05D",
-    "name": "包房05门前",
-    "group": "包房走廊",
-    "image": "images/R05D.webp",
-    "original": "images-hd/R05D.webp",
+    "name": "包间05 · 门前走道",
     "cad_xy": [
       260685.1254,
       106256.8531
@@ -897,14 +1141,18 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "R04D",
+      "R05A",
       "R06D",
-      "R08D",
-      "R05A"
+      "R08D"
     ],
     "hotspotAnchors": {
       "R04D": [
         259335.1254,
         106256.8531
+      ],
+      "R05A": [
+        260835.1254,
+        107856.8638
       ],
       "R06D": [
         267789.0786,
@@ -913,27 +1161,27 @@ window.PHOTO_TOUR = [
       "R08D": [
         267789.0786,
         106156.8745
-      ],
-      "R05A": [
-        260835.1254,
-        107856.8638
       ]
     },
     "hotspotLabels": {
-      "R04D": "沿通道前往包房04",
-      "R06D": "沿通道前往包房06",
-      "R08D": "沿通道前往包房08",
-      "R05A": "进入包房05"
+      "R04D": "包间04 · 门前走道",
+      "R05A": "包间05 · 室内全景",
+      "R06D": "包间06 · 门前走道",
+      "R08D": "包间08 · 门前走道"
     },
-    "hdImage": "images-balanced/R05D.webp",
-    "previewImage": "images-preview/R05D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R05D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R05D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R05D.webp?v=20261101v5",
+    "original": "images-v5/hd/R05D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R05A",
-    "name": "包房05 · 靠门看全屋",
-    "group": "包房05",
-    "image": "images/R05A.webp",
-    "original": "images-hd/R05A.webp",
+    "name": "包间05 · 室内全景",
     "cad_xy": [
       260835.1254,
       107856.8638
@@ -943,32 +1191,36 @@ window.PHOTO_TOUR = [
       110543.436
     ],
     "neighbors": [
-      "R05D",
-      "R05B"
+      "R05B",
+      "R05D"
     ],
     "hotspotAnchors": {
-      "R05D": [
-        260685.1254,
-        106256.8531
-      ],
       "R05B": [
         260535.1254,
         109056.8638
+      ],
+      "R05D": [
+        260685.1254,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "R05D": "回到门前",
-      "R05B": "换到桌侧"
+      "R05B": "包间05 · 反向细节",
+      "R05D": "包间05 · 门前走道"
     },
-    "hdImage": "images-balanced/R05A.webp",
-    "previewImage": "images-preview/R05A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R05A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R05A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R05A.webp?v=20261101v5",
+    "original": "images-v5/hd/R05A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R05B",
-    "name": "包房05 · 桌侧细节",
-    "group": "包房05",
-    "image": "images/R05B.webp",
-    "original": "images-hd/R05B.webp",
+    "name": "包间05 · 反向细节",
     "cad_xy": [
       260535.1254,
       109056.8638
@@ -987,17 +1239,21 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R05A": "换到门侧"
+      "R05A": "包间05 · 室内全景"
     },
-    "hdImage": "images-balanced/R05B.webp",
-    "previewImage": "images-preview/R05B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R05B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R05B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R05B.webp?v=20261101v5",
+    "original": "images-v5/hd/R05B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R06D",
-    "name": "包房06门前",
-    "group": "包房走廊",
-    "image": "images/R06D.webp",
-    "original": "images-hd/R06D.webp",
+    "name": "包间06 · 门前走道",
     "cad_xy": [
       267789.0786,
       106256.8531
@@ -1008,37 +1264,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "R05D",
-      "R07D",
-      "R06A"
+      "R06A",
+      "R07D"
     ],
     "hotspotAnchors": {
       "R05D": [
         260685.1254,
         106256.8531
       ],
-      "R07D": [
-        269139.0786,
-        106256.8531
-      ],
       "R06A": [
         267885.1254,
         107856.8638
+      ],
+      "R07D": [
+        269139.0786,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "R05D": "沿通道前往包房05",
-      "R07D": "沿通道前往包房07",
-      "R06A": "进入包房06"
+      "R05D": "包间05 · 门前走道",
+      "R06A": "包间06 · 室内全景",
+      "R07D": "包间07 · 门前走道"
     },
-    "hdImage": "images-balanced/R06D.webp",
-    "previewImage": "images-preview/R06D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R06D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R06D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R06D.webp?v=20261101v5",
+    "original": "images-v5/hd/R06D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R06A",
-    "name": "包房06 · 靠门看全屋",
-    "group": "包房06",
-    "image": "images/R06A.webp",
-    "original": "images-hd/R06A.webp",
+    "name": "包间06 · 室内全景",
     "cad_xy": [
       267885.1254,
       107856.8638
@@ -1048,32 +1308,36 @@ window.PHOTO_TOUR = [
       110363.1768
     ],
     "neighbors": [
-      "R06D",
-      "R06B"
+      "R06B",
+      "R06D"
     ],
     "hotspotAnchors": {
+      "R06B": [
+        268050,
+        110250
+      ],
       "R06D": [
         267789.0786,
         106256.8531
-      ],
-      "R06B": [
-        267885.1254,
-        110856.8638
       ]
     },
     "hotspotLabels": {
-      "R06D": "回到门前",
-      "R06B": "换到桌侧"
+      "R06B": "包间06 · 反向细节",
+      "R06D": "包间06 · 门前走道"
     },
-    "hdImage": "images-balanced/R06A.webp",
-    "previewImage": "images-preview/R06A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R06A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R06A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R06A.webp?v=20261101v5",
+    "original": "images-v5/hd/R06A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R06B",
-    "name": "包房06 · 桌侧细节",
-    "group": "包房06",
-    "image": "images/R06B.webp",
-    "original": "images-hd/R06B.webp",
+    "name": "包间06 · 反向细节",
     "cad_xy": [
       267885.1254,
       110856.8638
@@ -1087,22 +1351,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R06A": [
-        267885.1254,
-        107856.8638
+        268050,
+        110250
       ]
     },
     "hotspotLabels": {
-      "R06A": "换到门侧"
+      "R06A": "包间06 · 室内全景"
     },
-    "hdImage": "images-balanced/R06B.webp",
-    "previewImage": "images-preview/R06B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R06B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R06B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R06B.webp?v=20261101v5",
+    "original": "images-v5/hd/R06B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R07D",
-    "name": "包房07门前",
-    "group": "包房走廊",
-    "image": "images/R07D.webp",
-    "original": "images-hd/R07D.webp",
+    "name": "包间07 · 门前走道",
     "cad_xy": [
       269139.0786,
       106256.8531
@@ -1126,18 +1394,22 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R06D": "沿通道前往包房06",
-      "R07A": "进入包房07"
+      "R06D": "包间06 · 门前走道",
+      "R07A": "包间07 · 室内全景"
     },
-    "hdImage": "images-balanced/R07D.webp",
-    "previewImage": "images-preview/R07D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R07D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R07D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R07D.webp?v=20261101v5",
+    "original": "images-v5/hd/R07D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R07A",
-    "name": "包房07 · 靠门看全屋",
-    "group": "包房07",
-    "image": "images/R07A.webp",
-    "original": "images-hd/R07A.webp",
+    "name": "包间07 · 室内全景",
     "cad_xy": [
       269035.1254,
       107856.8638
@@ -1147,32 +1419,36 @@ window.PHOTO_TOUR = [
       110418.5416
     ],
     "neighbors": [
-      "R07D",
-      "R07B"
+      "R07B",
+      "R07D"
     ],
     "hotspotAnchors": {
-      "R07D": [
-        269139.0786,
-        106256.8531
-      ],
       "R07B": [
         270535.1254,
         108156.8638
+      ],
+      "R07D": [
+        269139.0786,
+        106256.8531
       ]
     },
     "hotspotLabels": {
-      "R07D": "回到门前",
-      "R07B": "换到桌侧"
+      "R07B": "包间07 · 反向细节",
+      "R07D": "包间07 · 门前走道"
     },
-    "hdImage": "images-balanced/R07A.webp",
-    "previewImage": "images-preview/R07A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R07A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R07A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R07A.webp?v=20261101v5",
+    "original": "images-v5/hd/R07A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R07B",
-    "name": "包房07 · 桌侧细节",
-    "group": "包房07",
-    "image": "images/R07B.webp",
-    "original": "images-hd/R07B.webp",
+    "name": "包间07 · 反向细节",
     "cad_xy": [
       270535.1254,
       108156.8638
@@ -1191,17 +1467,21 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R07A": "换到门侧"
+      "R07A": "包间07 · 室内全景"
     },
-    "hdImage": "images-balanced/R07B.webp",
-    "previewImage": "images-preview/R07B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R07B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R07B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R07B.webp?v=20261101v5",
+    "original": "images-v5/hd/R07B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R08D",
-    "name": "包房08门前",
-    "group": "包房走廊",
-    "image": "images/R08D.webp",
-    "original": "images-hd/R08D.webp",
+    "name": "包间08 · 门前走道",
     "cad_xy": [
       267789.0786,
       106156.8745
@@ -1212,37 +1492,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "R05D",
-      "R09D",
-      "R08A"
+      "R08A",
+      "R09D"
     ],
     "hotspotAnchors": {
       "R05D": [
         260685.1254,
         106256.8531
       ],
-      "R09D": [
-        269139.0786,
-        106156.8745
-      ],
       "R08A": [
         267835.1254,
         104656.8638
+      ],
+      "R09D": [
+        269139.0786,
+        106156.8745
       ]
     },
     "hotspotLabels": {
-      "R05D": "沿通道前往包房05",
-      "R09D": "沿通道前往包房09",
-      "R08A": "进入包房08"
+      "R05D": "包间05 · 门前走道",
+      "R08A": "包间08 · 室内全景",
+      "R09D": "包间09 · 门前走道"
     },
-    "hdImage": "images-balanced/R08D.webp",
-    "previewImage": "images-preview/R08D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R08D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R08D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R08D.webp?v=20261101v5",
+    "original": "images-v5/hd/R08D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R08A",
-    "name": "包房08 · 靠门看全屋",
-    "group": "包房08",
-    "image": "images/R08A.webp",
-    "original": "images-hd/R08A.webp",
+    "name": "包间08 · 室内全景",
     "cad_xy": [
       267835.1254,
       104656.8638
@@ -1252,32 +1536,36 @@ window.PHOTO_TOUR = [
       102588.4443
     ],
     "neighbors": [
-      "R08D",
-      "R08B"
+      "R08B",
+      "R08D"
     ],
     "hotspotAnchors": {
+      "R08B": [
+        266024.4089460369,
+        105047.90936055401
+      ],
       "R08D": [
         267789.0786,
         106156.8745
-      ],
-      "R08B": [
-        266185.1254,
-        104856.8638
       ]
     },
     "hotspotLabels": {
-      "R08D": "回到门前",
-      "R08B": "换到桌侧"
+      "R08B": "包间08 · 反向细节",
+      "R08D": "包间08 · 门前走道"
     },
-    "hdImage": "images-balanced/R08A.webp",
-    "previewImage": "images-preview/R08A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R08A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R08A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R08A.webp?v=20261101v5",
+    "original": "images-v5/hd/R08A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R08B",
-    "name": "包房08 · 桌侧细节",
-    "group": "包房08",
-    "image": "images/R08B.webp",
-    "original": "images-hd/R08B.webp",
+    "name": "包间08 · 反向细节",
     "cad_xy": [
       265135.1254,
       102256.8638
@@ -1291,22 +1579,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R08A": [
-        264985.1254,
-        102756.8638
+        264919.7271806078,
+        102228.75115577468
       ]
     },
     "hotspotLabels": {
-      "R08A": "换到门侧"
+      "R08A": "包间08 · 室内全景"
     },
-    "hdImage": "images-balanced/R08B.webp",
-    "previewImage": "images-preview/R08B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R08B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R08B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R08B.webp?v=20261101v5",
+    "original": "images-v5/hd/R08B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R09D",
-    "name": "包房09门前",
-    "group": "包房走廊",
-    "image": "images/R09D.webp",
-    "original": "images-hd/R09D.webp",
+    "name": "包间09 · 门前走道",
     "cad_xy": [
       269139.0786,
       106156.8745
@@ -1316,10 +1608,15 @@ window.PHOTO_TOUR = [
       103156.8745
     ],
     "neighbors": [
+      "COR_EAST_B",
       "R08D",
       "R09A"
     ],
     "hotspotAnchors": {
+      "COR_EAST_B": [
+        272850,
+        105750
+      ],
       "R08D": [
         267789.0786,
         106156.8745
@@ -1330,18 +1627,23 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R08D": "沿通道前往包房08",
-      "R09A": "进入包房09"
+      "COR_EAST_B": "东侧公共过道北段",
+      "R08D": "包间08 · 门前走道",
+      "R09A": "包间09 · 室内全景"
     },
-    "hdImage": "images-balanced/R09D.webp",
-    "previewImage": "images-preview/R09D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R09D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R09D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R09D.webp?v=20261101v5",
+    "original": "images-v5/hd/R09D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R09A",
-    "name": "包房09 · 靠门看全屋",
-    "group": "包房09",
-    "image": "images/R09A.webp",
-    "original": "images-hd/R09A.webp",
+    "name": "包间09 · 室内全景",
     "cad_xy": [
       269035.1254,
       104656.8638
@@ -1351,32 +1653,36 @@ window.PHOTO_TOUR = [
       102479.1721
     ],
     "neighbors": [
-      "R09D",
-      "R09B"
+      "R09B",
+      "R09D"
     ],
     "hotspotAnchors": {
+      "R09B": [
+        270750,
+        105000
+      ],
       "R09D": [
         269139.0786,
         106156.8745
-      ],
-      "R09B": [
-        271285.1254,
-        104706.8638
       ]
     },
     "hotspotLabels": {
-      "R09D": "回到门前",
-      "R09B": "换到桌侧"
+      "R09B": "包间09 · 反向细节",
+      "R09D": "包间09 · 门前走道"
     },
-    "hdImage": "images-balanced/R09A.webp",
-    "previewImage": "images-preview/R09A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R09A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R09A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R09A.webp?v=20261101v5",
+    "original": "images-v5/hd/R09A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R09B",
-    "name": "包房09 · 桌侧细节",
-    "group": "包房09",
-    "image": "images/R09B.webp",
-    "original": "images-hd/R09B.webp",
+    "name": "包间09 · 反向细节",
     "cad_xy": [
       271435.1254,
       104656.8638
@@ -1395,17 +1701,21 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R09A": "换到门侧"
+      "R09A": "包间09 · 室内全景"
     },
-    "hdImage": "images-balanced/R09B.webp",
-    "previewImage": "images-preview/R09B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R09B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R09B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R09B.webp?v=20261101v5",
+    "original": "images-v5/hd/R09B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R10D",
-    "name": "包房10门前",
-    "group": "包房走廊",
-    "image": "images/R10D.webp",
-    "original": "images-hd/R10D.webp",
+    "name": "包间10 · 门前走道",
     "cad_xy": [
       267776.9457,
       93136.1573
@@ -1416,37 +1726,41 @@ window.PHOTO_TOUR = [
     ],
     "neighbors": [
       "CP10",
-      "R11D",
-      "R10A"
+      "R10A",
+      "R11D"
     ],
     "hotspotAnchors": {
       "CP10": [
         259600,
         95000
       ],
-      "R11D": [
-        269093.3051,
-        93136.1573
-      ],
       "R10A": [
         267835.1254,
         90456.8638
+      ],
+      "R11D": [
+        269093.3051,
+        93136.1573
       ]
     },
     "hotspotLabels": {
-      "CP10": "前往大厅东侧",
-      "R11D": "沿通道前往包房11",
-      "R10A": "进入包房10"
+      "CP10": "大厅东侧",
+      "R10A": "包间10 · 室内全景",
+      "R11D": "包间11 · 门前走道"
     },
-    "hdImage": "images-balanced/R10D.webp",
-    "previewImage": "images-preview/R10D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R10D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R10D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R10D.webp?v=20261101v5",
+    "original": "images-v5/hd/R10D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R10A",
-    "name": "包房10 · 靠门看全屋",
-    "group": "包房10",
-    "image": "images/R10A.webp",
-    "original": "images-hd/R10A.webp",
+    "name": "包间10 · 室内全景",
     "cad_xy": [
       267835.1254,
       90456.8638
@@ -1456,32 +1770,36 @@ window.PHOTO_TOUR = [
       87713.27
     ],
     "neighbors": [
-      "R10D",
-      "R10B"
+      "R10B",
+      "R10D"
     ],
     "hotspotAnchors": {
+      "R10B": [
+        264900,
+        88500
+      ],
       "R10D": [
         267776.9457,
         93136.1573
-      ],
-      "R10B": [
-        264535.1254,
-        88056.8638
       ]
     },
     "hotspotLabels": {
-      "R10D": "回到门前",
-      "R10B": "换到桌侧"
+      "R10B": "包间10 · 反向细节",
+      "R10D": "包间10 · 门前走道"
     },
-    "hdImage": "images-balanced/R10A.webp",
-    "previewImage": "images-preview/R10A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R10A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R10A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R10A.webp?v=20261101v5",
+    "original": "images-v5/hd/R10A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R10B",
-    "name": "包房10 · 桌侧细节",
-    "group": "包房10",
-    "image": "images/R10B.webp",
-    "original": "images-hd/R10B.webp",
+    "name": "包间10 · 反向细节",
     "cad_xy": [
       264535.1254,
       85956.8638
@@ -1495,22 +1813,26 @@ window.PHOTO_TOUR = [
     ],
     "hotspotAnchors": {
       "R10A": [
-        264535.1254,
-        88056.8638
+        264450,
+        86100
       ]
     },
     "hotspotLabels": {
-      "R10A": "换到门侧"
+      "R10A": "包间10 · 室内全景"
     },
-    "hdImage": "images-balanced/R10B.webp",
-    "previewImage": "images-preview/R10B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R10B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R10B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R10B.webp?v=20261101v5",
+    "original": "images-v5/hd/R10B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R11D",
-    "name": "包房11门前",
-    "group": "包房走廊",
-    "image": "images/R11D.webp",
-    "original": "images-hd/R11D.webp",
+    "name": "包间11 · 门前走道",
     "cad_xy": [
       269093.3051,
       93136.1573
@@ -1520,10 +1842,15 @@ window.PHOTO_TOUR = [
       90136.1573
     ],
     "neighbors": [
+      "EL_EAST",
       "R10D",
       "R11A"
     ],
     "hotspotAnchors": {
+      "EL_EAST": [
+        269100,
+        93750
+      ],
       "R10D": [
         267776.9457,
         93136.1573
@@ -1534,18 +1861,23 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R10D": "沿通道前往包房10",
-      "R11A": "进入包房11"
+      "EL_EAST": "东部消防电梯前室",
+      "R10D": "包间10 · 门前走道",
+      "R11A": "包间11 · 室内全景"
     },
-    "hdImage": "images-balanced/R11D.webp",
-    "previewImage": "images-preview/R11D.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R11D.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R11D.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R11D.webp?v=20261101v5",
+    "original": "images-v5/hd/R11D.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R11A",
-    "name": "包房11 · 靠门看全屋",
-    "group": "包房11",
-    "image": "images/R11A.webp",
-    "original": "images-hd/R11A.webp",
+    "name": "包间11 · 室内全景",
     "cad_xy": [
       269610.1254,
       90456.8638
@@ -1555,32 +1887,36 @@ window.PHOTO_TOUR = [
       87671.8393
     ],
     "neighbors": [
-      "R11D",
-      "R11B"
+      "R11B",
+      "R11D"
     ],
     "hotspotAnchors": {
+      "R11B": [
+        268950,
+        87150
+      ],
       "R11D": [
         269093.3051,
         93136.1573
-      ],
-      "R11B": [
-        269035.1254,
-        86256.8638
       ]
     },
     "hotspotLabels": {
-      "R11D": "回到门前",
-      "R11B": "换到桌侧"
+      "R11B": "包间11 · 反向细节",
+      "R11D": "包间11 · 门前走道"
     },
-    "hdImage": "images-balanced/R11A.webp",
-    "previewImage": "images-preview/R11A.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R11A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R11A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R11A.webp?v=20261101v5",
+    "original": "images-v5/hd/R11A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
     "id": "R11B",
-    "name": "包房11 · 桌侧细节",
-    "group": "包房11",
-    "image": "images/R11B.webp",
-    "original": "images-hd/R11B.webp",
+    "name": "包间11 · 反向细节",
     "cad_xy": [
       269310.1254,
       85956.8638
@@ -1599,38 +1935,340 @@ window.PHOTO_TOUR = [
       ]
     },
     "hotspotLabels": {
-      "R11A": "换到门侧"
+      "R11A": "包间11 · 室内全景"
     },
-    "hdImage": "images-balanced/R11B.webp",
-    "previewImage": "images-preview/R11B.webp"
+    "group": "包间与独立就餐区",
+    "image": "images-v5/standard/R11B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/R11B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/R11B.webp?v=20261101v5",
+    "original": "images-v5/hd/R11B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   },
   {
-    "id": "CP11",
-    "name": "茶室入口",
-    "group": "茶室",
-    "image": "images/CP11.webp",
-    "original": "images-hd/CP11.webp",
+    "id": "COR_EAST_A",
+    "name": "东侧公共过道南段",
     "cad_xy": [
-      266198.8086,
-      84221.7974
+      274600,
+      97200
     ],
     "lookAt": [
-      263537.776,
-      82836.5518
+      274600,
+      100600
     ],
     "neighbors": [
-      "CP10"
+      "COR_EAST_B",
+      "EL_EAST"
     ],
     "hotspotAnchors": {
-      "CP10": [
-        266335.1254,
-        84456.8638
+      "COR_EAST_B": [
+        274500,
+        103000
+      ],
+      "EL_EAST": [
+        273000,
+        94350
       ]
     },
     "hotspotLabels": {
-      "CP10": "前往大厅东侧"
+      "COR_EAST_B": "东侧公共过道北段",
+      "EL_EAST": "东部消防电梯前室"
     },
-    "hdImage": "images-balanced/CP11.webp",
-    "previewImage": "images-preview/CP11.webp"
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/COR_EAST_A.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/COR_EAST_A.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/COR_EAST_A.webp?v=20261101v5",
+    "original": "images-v5/hd/COR_EAST_A.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "COR_EAST_B",
+    "name": "东侧公共过道北段",
+    "cad_xy": [
+      274500,
+      103000
+    ],
+    "lookAt": [
+      274500,
+      107500
+    ],
+    "neighbors": [
+      "COR_EAST_A",
+      "EL_SERVICE",
+      "R09D",
+      "WC_ACCESS"
+    ],
+    "hotspotAnchors": {
+      "COR_EAST_A": [
+        274600,
+        97200
+      ],
+      "EL_SERVICE": [
+        274350,
+        103500
+      ],
+      "R09D": [
+        272850,
+        105750
+      ],
+      "WC_ACCESS": [
+        276150,
+        101850
+      ]
+    },
+    "hotspotLabels": {
+      "COR_EAST_A": "东侧公共过道南段",
+      "EL_SERVICE": "东北厨房货梯厅",
+      "R09D": "包间09 · 门前走道",
+      "WC_ACCESS": "无障碍卫生间"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/COR_EAST_B.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/COR_EAST_B.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/COR_EAST_B.webp?v=20261101v5",
+    "original": "images-v5/hd/COR_EAST_B.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "EL_EAST",
+    "name": "东部消防电梯前室",
+    "cad_xy": [
+      271100,
+      98100
+    ],
+    "lookAt": [
+      269585,
+      98300
+    ],
+    "neighbors": [
+      "COR_EAST_A",
+      "R11D"
+    ],
+    "hotspotAnchors": {
+      "COR_EAST_A": [
+        272100,
+        94350
+      ],
+      "R11D": [
+        269100,
+        93750
+      ]
+    },
+    "hotspotLabels": {
+      "COR_EAST_A": "东侧公共过道南段",
+      "R11D": "包间11 · 门前走道"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/EL_EAST.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/EL_EAST.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/EL_EAST.webp?v=20261101v5",
+    "original": "images-v5/hd/EL_EAST.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "EL_WEST",
+    "name": "西部双客梯大堂",
+    "cad_xy": [
+      245200,
+      90900
+    ],
+    "lookAt": [
+      245200,
+      92900
+    ],
+    "neighbors": [],
+    "hotspotAnchors": {},
+    "hotspotLabels": {},
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/EL_WEST.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/EL_WEST.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/EL_WEST.webp?v=20261101v5",
+    "original": "images-v5/hd/EL_WEST.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "EL_SERVICE",
+    "name": "东北厨房货梯厅",
+    "cad_xy": [
+      277100,
+      107800
+    ],
+    "lookAt": [
+      277100,
+      105700
+    ],
+    "neighbors": [
+      "COR_EAST_B"
+    ],
+    "hotspotAnchors": {
+      "COR_EAST_B": [
+        275250,
+        108150
+      ]
+    },
+    "hotspotLabels": {
+      "COR_EAST_B": "东侧公共过道北段"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/EL_SERVICE.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/EL_SERVICE.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/EL_SERVICE.webp?v=20261101v5",
+    "original": "images-v5/hd/EL_SERVICE.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "WC_WASH",
+    "name": "公共盥洗区",
+    "cad_xy": [
+      277400,
+      98900
+    ],
+    "lookAt": [
+      276550,
+      99200
+    ],
+    "neighbors": [
+      "WC_MEN",
+      "WC_WOMEN"
+    ],
+    "hotspotAnchors": {
+      "WC_MEN": [
+        277650,
+        97650
+      ],
+      "WC_WOMEN": [
+        277800,
+        100050
+      ]
+    },
+    "hotspotLabels": {
+      "WC_MEN": "男卫入口内通道",
+      "WC_WOMEN": "女卫入口内通道"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/WC_WASH.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/WC_WASH.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/WC_WASH.webp?v=20261101v5",
+    "original": "images-v5/hd/WC_WASH.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "WC_ACCESS",
+    "name": "无障碍卫生间",
+    "cad_xy": [
+      277100,
+      101850
+    ],
+    "lookAt": [
+      276900,
+      102800
+    ],
+    "neighbors": [
+      "COR_EAST_B"
+    ],
+    "hotspotAnchors": {
+      "COR_EAST_B": [
+        276150,
+        101850
+      ]
+    },
+    "hotspotLabels": {
+      "COR_EAST_B": "东侧公共过道北段"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/WC_ACCESS.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/WC_ACCESS.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/WC_ACCESS.webp?v=20261101v5",
+    "original": "images-v5/hd/WC_ACCESS.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "WC_MEN",
+    "name": "男卫入口内通道",
+    "cad_xy": [
+      278850,
+      97700
+    ],
+    "lookAt": [
+      280000,
+      98200
+    ],
+    "neighbors": [
+      "WC_WASH"
+    ],
+    "hotspotAnchors": {
+      "WC_WASH": [
+        278850,
+        97500
+      ]
+    },
+    "hotspotLabels": {
+      "WC_WASH": "公共盥洗区"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/WC_MEN.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/WC_MEN.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/WC_MEN.webp?v=20261101v5",
+    "original": "images-v5/hd/WC_MEN.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
+  },
+  {
+    "id": "WC_WOMEN",
+    "name": "女卫入口内通道",
+    "cad_xy": [
+      279100,
+      101500
+    ],
+    "lookAt": [
+      279700,
+      102200
+    ],
+    "neighbors": [
+      "WC_WASH"
+    ],
+    "hotspotAnchors": {
+      "WC_WASH": [
+        279000,
+        101250
+      ]
+    },
+    "hotspotLabels": {
+      "WC_WASH": "公共盥洗区"
+    },
+    "group": "电梯、公共走道与卫生间",
+    "image": "images-v5/standard/WC_WOMEN.webp?v=20261101v5",
+    "previewImage": "images-v5/preview/WC_WOMEN.webp?v=20261101v5",
+    "hdImage": "images-v5/hd/WC_WOMEN.webp?v=20261101v5",
+    "original": "images-v5/hd/WC_WOMEN.webp?v=20261101v5",
+    "imageRevision": "20261101v5",
+    "cameraHeightM": 1.6,
+    "roomHeightM": 3.3,
+    "heightsAreAdjustableDesignAssumptions": true
   }
 ];
